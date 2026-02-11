@@ -1,5 +1,5 @@
 #This is a comment
-print("hello from Elvis")
+print("hello from Ronnie")
 # city / town
 print("I am from Thika") 
 #my hobbies
