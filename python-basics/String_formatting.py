@@ -48,7 +48,6 @@ print(f"The new balance is: {sum_balance}Kes")
 mpesa_message="CONFIRMED you have received 40Kes from Phillip Mugambi."
 split = mpesa_message.split(" ")
 print(f" {mpesa_message}" , split[4])
-print(f" " , "split[4]")
 received = "40Kes"
 received_cash =received.replace("Kes", "")
 cleaned_balance1 = "12"
