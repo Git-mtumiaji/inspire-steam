@@ -14,7 +14,6 @@ print(f"The nth term is : {nth_term}")
 print(f"The sum of the terms is : {sn}")
 
 # program to calculate geometric progression
-
 # Assignment 
 
 a = int(input("Enter the first number :"))
