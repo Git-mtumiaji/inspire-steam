@@ -28,7 +28,11 @@ for y in range (-180,180,30):
 for y in range (-180,180,30):
     print(f"tangent of {y} = {math.tan(y)}")   
 
-
+print(|"___________________________________ ")
+print(|"(y_________________________________)")
+print(|{math.tan(y)})
+print(|{math.sin(y)})
+print(|{math.cos(y)})
 
 
 
