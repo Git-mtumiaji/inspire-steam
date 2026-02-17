@@ -13,10 +13,6 @@ print(f"net salary = {net_salary}")
 print(f"Tax = {tax}")
 
 
-
-
-
-
-print(f"Gross salary = {salary}")
-print(f"net salary = {net_salary}")
-print(f"Tax = {tax}")
+elif salary > 100000:
+    tax = (7.5 * salary) / 100
+    net_salary = salary - tax  
