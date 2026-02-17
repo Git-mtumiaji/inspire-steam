@@ -13,3 +13,10 @@ print(f"net salary = {net_salary}")
 print(f"Tax = {tax}")
 
 
+
+
+
+
+print(f"Gross salary = {salary}")
+print(f"net salary = {net_salary}")
+print(f"Tax = {tax}")
