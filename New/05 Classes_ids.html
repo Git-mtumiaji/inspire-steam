@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module05: classes, ids</title>
+
+    <style>
+        body {
+            background-color: cadetblue;
+            color: lavenderblush;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #page-wrapper{
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+        .band-photos{
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+        #photos{
+            width: 607px;
+            height: 203px;
+            background-color: darksalmon;
+        }
+        #listen-section{
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            width: auto;
+            height: auto;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        id: unique, only one element in a page should have it
+
+        class: reusable, used to identify multiple elements together
+    -->
+        <div id="page-wrapper">
+            <h1>Marino</h1>
+            <p>Desc: Band from the US</p>
+            
+            <div id="photos">
+            <img class="band-photos" src="./Assets/Images/yes.png" alt="band photo"> 
+            <img class="band-photos" src="./Assets/Images/duck.jpg" alt="band photo">
+            </div>
+
+            <div id="listen-section">
+                <p class="song">Latest song-</p>
+
+                <p class="song">Earlier song-</p>
+            </div>
+        </div>
+</body>
+</html>
