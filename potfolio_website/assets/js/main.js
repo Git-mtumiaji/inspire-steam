@@ -59,5 +59,5 @@ sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
 const toggle = document.getElementById("theme-toggle");
 
 toggle.addEventListener("click", () => {
-  document.body.classList.toggle("light-mode");
+  document.body.classList.toggle("dark-mode");
 });

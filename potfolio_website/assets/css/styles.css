@@ -580,15 +580,16 @@ img {
   }
 }
 
-:root {
-  --bg-color: #0f172a;
-  --text-color: #e2e8f0;
-}
-
 /* LIGHT MODE */
-body.light-mode {
+.root {
   --bg-color: #ffffff;
   --text-color: #111827;
+}
+
+/* DARK MODE */
+body.dark-mode {
+  --bg-color: #0f172a;
+  --text-color: #e2e8f0;
 }
 
 body {
