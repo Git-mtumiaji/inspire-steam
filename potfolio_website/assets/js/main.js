@@ -61,3 +61,50 @@ const toggle = document.getElementById("theme-toggle");
 toggle.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const popup = document.getElementById("image-popup");
+  const popupImg = document.getElementById("popup-img");
+  const closeBtn = document.getElementById("close-btn");
+
+  const images = document.querySelectorAll(".work__img img");
+
+  images.forEach(img => {
+    img.addEventListener("click", function () {
+      popup.style.display = "flex";
+      popupImg.src = this.src;
+    });
+  });
+
+  closeBtn.addEventListener("click", function () {
+    popup.style.display = "none";
+  });
+
+  popup.addEventListener("click", (e) => {
+    if (e.target === popup) {
+        popup.style.display = "none";
+    }
+    });
+
+});
+
+const faders = document.querySelectorAll(".fade-in");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+faders.forEach(el => observer.observe(el));
+
+popup.style.display = "flex";
+setTimeout(() => popup.classList.add("show"), 10);
+
+closeBtn.addEventListener("click", () => {
+  popup.classList.remove("show");
+  setTimeout(() => popup.style.display = "none", 300);
+});
