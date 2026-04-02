@@ -130,7 +130,7 @@ img {
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: var(--bg-color);
+    background-color: cornflowerblue;
     transition: 0.5s;
   }
 }
